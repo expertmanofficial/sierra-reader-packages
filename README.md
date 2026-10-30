@@ -7,6 +7,32 @@ This repository hosts reader packages, not APKs.
 Sierra is a Markdown viewer app. To keep the APK small, Sierra downloads
 the needed reader package at first run instead of bundling it.
 
+## Issues: what is accepted here
+
+This repository is NOT the Sierra app repository. It is only about
+reader packages, that is, Markdown types and the reader engines and
+packages that render them.
+
+Accepted here:
+- A reader pack, channel pack, or universal pack that fails to download
+- A byte count or SHA-256 mismatch for a pack in a release
+- A problem with reader-updates.json, a channel, or an engine in a pack
+- A Markdown type that a pack should render but does not, with a
+  minimal example and the pack filename and channel
+
+Not accepted here, and automatically closed:
+- Sierra app issues: the app interface, installation, APKs, accounts,
+  features, or any bug in the Sierra app itself
+- Feature requests for the Sierra app
+- Anything unrelated to reader packages or this repository's role
+
+Any issue that is not about reader packages will be automatically
+closed by the repository's GitHub Action, with a comment explaining
+this scope. See the pinned issue on the Issues page for the full
+rules. If an issue was closed in error, reopen it with the pack
+filename, channel, download URL, expected and actual byte count and
+SHA-256 if relevant, and steps to reproduce it.
+
 ## Current verified package — Sierra build 113, app version 1.70
 
 - Universal file: sierra-reader-b9fa9ebe0cd6e37e3bd4765712be77d479edd86122951aea698be5ce389232b1.zip

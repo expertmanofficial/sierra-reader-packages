@@ -1,1 +1,32 @@
-# Placeholder: the real workflow content will be uploaded next.
+name: Close out-of-scope issues
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  close-out-of-scope:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check issue scope and close if out of scope
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          IS_PR=$(gh api "repos/$REPO/issues/$ISSUE_NUMBER" --jq '.pull_request // empty')
+          if [ -n "$IS_PR" ]; then
+            echo "This is a pull request, leaving it alone."
+            exit 0
+          fi
+          TEXT=$(gh api "repos/$REPO/issues/$ISSUE_NUMBER" --jq '.title + " " + (.body // "")' | tr '[:upper:]' '[:lower:]')
+          if echo "$TEXT" | grep -qiE 'reader|markdown|channel|universal|stable|beta|alpha|engine|pandoc|mermaid|myst|diagram|download|sha|checksum|manifest|release|asset|zip'; then
+            echo "Issue appears to be about reader packages, leaving it open."
+            exit 0
+          fi
+          gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "This repository is only for Sierra reader packages, that is, Markdown types and the reader engines and packages that render them. It is not the Sierra app repository. This issue does not appear to be about a reader package, a channel pack, the universal pack, a download, a hash or checksum, or reader-updates.json, so it is being closed automatically as out of scope. If this issue is actually about a reader package, please reopen it and include: the pack filename, the channel (stable, beta, alpha, or universal), the download URL, the expected and actual byte count and SHA-256 if relevant, and the steps to reproduce it."
+          gh issue close "$ISSUE_NUMBER" --repo "$REPO" --reason not_planned

@@ -49,6 +49,15 @@ removed Request from inline R. All four main channels passed source
 compilation. No APKs were built and no device visuals were verified
 for this build.
 
+## Beta build 121 — optional translator runtime, app version 1.70
+
+- Optional translator runtime file: libtranslate-jni-arm64-v1.so
+- Bytes: 16361048
+- SHA-256: 35b3d0366291347e3f25e80e809ee398d716aea49cd03278007fedd526a1496f
+- Download: https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/libtranslate-jni-arm64-v1.so
+
+Beta build 121, as reported by Codex: Markdown reading no longer waits for a package download. Reader tools are optional, and Home now has a direct "Having trouble? Get help" link. The APK is about 45.4 MB, down from build 120's 61.7 MB; the translator library is no longer bundled. Stable was not changed. The matching Beta APK verifies this exact size and SHA-256 before loading the library. Do not rename or modify the file. Offline translation will not work until this asset is publicly available. Ordinary Markdown reading and all other app functions do not depend on this asset. No APK is included in this release.
+
 Channel packs in the same reader-pack-v1 release, each a small
 engines/channel.json marker for its channel, unchanged from build 110:
 

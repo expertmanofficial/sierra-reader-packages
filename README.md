@@ -58,6 +58,16 @@ for this build.
 
 Beta build 121, as reported by Codex: Markdown reading no longer waits for a package download. Reader tools are optional, and Home now has a direct "Having trouble? Get help" link. The APK is about 45.4 MB, down from build 120's 61.7 MB; the translator library is no longer bundled. Stable was not changed. The matching Beta APK verifies this exact size and SHA-256 before loading the library. Do not rename or modify the file. Offline translation will not work until this asset is publicly available. Ordinary Markdown reading and all other app functions do not depend on this asset. No APK is included in this release.
 
+## Beta build 125 — translator runtimes for all ABIs, app version 1.70
+
+- Optional translator runtimes, one per device ABI. Sierra downloads only the runtime matching the device architecture and verifies its exact size and SHA-256 before loading it.
+- armeabi-v7a: libtranslate-jni-armeabi-v7a-v1.so — 11608808 bytes, SHA-256 cdf803c7a17cadf5f53314365dd3c999746d98c510863c636de62c7acd8cb016 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/libtranslate-jni-armeabi-v7a-v1.so
+- x86: libtranslate-jni-x86-v1.so — 17258012 bytes, SHA-256 8501cf6c07570a276539399d2e63b7f3f9f46714b33607599a28ab6b3f33878e — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/libtranslate-jni-x86-v1.so
+- x86_64: libtranslate-jni-x86_64-v1.so — 17371632 bytes, SHA-256 d7e1b7be14a5cd2c20331c9a511efb3e98b777347abf7eb9bce9166fcb246975 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/libtranslate-jni-x86_64-v1.so
+- Reused, unchanged: libtranslate-jni-arm64-v1.so — 16361048 bytes, SHA-256 35b3d0366291347e3f25e80e809ee398d716aea49cd03278007fedd526a1496f — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/libtranslate-jni-arm64-v1.so
+
+Beta build 125, as reported by Codex: build 121 translation could not start on an x86_64 device because Beta only knew how to download the ARM64 library. Build 125 chooses the translation engine for the device's ABI. Build 125 compiled and installed in Ramus. No APK is included in this release.
+
 Channel packs in the same reader-pack-v1 release, each a small
 engines/channel.json marker for its channel, unchanged from build 110:
 

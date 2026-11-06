@@ -68,6 +68,14 @@ Beta build 121, as reported by Codex: Markdown reading no longer waits for a pac
 
 Beta build 125, as reported by Codex: build 121 translation could not start on an x86_64 device because Beta only knew how to download the ARM64 library. Build 125 chooses the translation engine for the device's ABI. Build 125 compiled and installed in Ramus. No APK is included in this release.
 
+## Beta build 143 — Beta dialect overlay, app version 1.70
+
+- Beta dialect overlay: sierra-beta-02768bec06057c11570b09c3b0bdd07a41afd669dca1d48e9cc39edf61a8cb8b.zip — 1372 bytes, expanded 4256 bytes, SHA-256 02768bec06057c11570b09c3b0bdd07a41afd669dca1d48e9cc39edf61a8cb8b — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-beta-02768bec06057c11570b09c3b0bdd07a41afd669dca1d48e9cc39edf61a8cb8b.zip
+- Updated signed reader catalog: reader-updates.json — 1947 bytes, SHA-256 cdbee547b1b852ef81632f66085768866d10eb98796532d8f696ea8dbb4f7a89, Ed25519-signed, schema 1, engineApi 1, minAppBuild 110. The catalog now points Beta at the new overlay; alpha, stable and the universal pack are unchanged in it.
+- Shared reader package unchanged: sierra-reader-b9fa9ebe0cd6e37e3bd4765712be77d479edd86122951aea698be5ce389232b1.zip — 67271212 bytes, SHA-256 b9fa9ebe0cd6e37e3bd4765712be77d479edd86122951aea698be5ce389232b1
+
+Beta build 143, as reported by Codex: the dialect rules moved out of the Beta APK and into a signed, updateable Beta reader-package overlay. The app now reads validated rules from that package; it does not execute downloaded code. The overlay covers Slack, Discord, Reddit, Stack Exchange, federated chat and note-taking syntax. Beta build 143 compiled and its APK signature verifies. The catalog needs activation before Beta can fetch the new overlay. No APK is included in this release.
+
 Channel packs in the same reader-pack-v1 release, each a small
 engines/channel.json marker for its channel, unchanged from build 110:
 

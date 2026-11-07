@@ -45,9 +45,9 @@ SHA-256 if relevant, and steps to reproduce it.
 
 ### Channel packages
 
-- Stable: sierra-stable-fdae75e02f986e2fca08caed952c3cc75c324ace8c957576aec33828190e26e9.zip — 183 bytes, SHA-256 fdae75e02f986e2fca08caed952c3cc75c324ace8c957576aec33828190e26e9 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-stable-fdae75e02f986e2fca08caed952c3cc75c324ace8c957576aec33828190e26e9.zip
+- Stable: sierra-stable-77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be.zip — 1953 bytes, expanded 6279 bytes, SHA-256 77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-stable-77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be.zip
 - Beta: sierra-beta-3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288.zip — 1951 bytes, expanded 6277 bytes, SHA-256 3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-beta-3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288.zip
-- Alpha: sierra-alpha-b448a3ee2e2ed773f1f9665bd0c920ea5add06e9cd33eaf581bdb7cbaa112df1.zip — 182 bytes, SHA-256 b448a3ee2e2ed773f1f9665bd0c920ea5add06e9cd33eaf581bdb7cbaa112df1 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-alpha-b448a3ee2e2ed773f1f9665bd0c920ea5add06e9cd33eaf581bdb7cbaa112df1.zip
+- Alpha: sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip — 1952 bytes, expanded 6278 bytes, SHA-256 31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip
 
 Latest Beta dialect package (build 147): Slack formatting and mentions,
 Discord spoilers, mentions, channel IDs and -# subtext, and escaped
@@ -59,7 +59,7 @@ to the local image picker.
 
 ### Signed reader catalog
 
-- reader-updates.json — 1947 bytes, SHA-256 f23f9e4bbc90575a7cc5cce6782c97166b07b2cc5685042584a6074ea97d8644, Ed25519-signed, schema 1, engineApi 1, minAppBuild 110
+- reader-updates.json — 1955 bytes, SHA-256 9643f7e7c951626e0fdecb2e3790d625096046135e8d7a7c3532da654a1e1e37, Ed25519-signed, schema 1, engineApi 1, minAppBuild 110
 - Download: https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/reader-updates.json
 - The catalog points each channel at its current package above.
 

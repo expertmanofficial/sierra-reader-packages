@@ -49,6 +49,8 @@ SHA-256 if relevant, and steps to reproduce it.
 - Beta: sierra-beta-3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288.zip — 1951 bytes, expanded 6277 bytes, SHA-256 3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-beta-3c5e89f9933b08108cf96f1558a2aa844ac859890ef9af834dff8dc73b31c288.zip
 - Alpha: sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip — 1952 bytes, expanded 6278 bytes, SHA-256 31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip
 
+Stable and Alpha overlays now carry the shared dialect rules (same rules as the Beta package). There is no separate LTS package channel; LTS uses the Stable overlay.
+
 Latest Beta dialect package (build 147): Slack formatting and mentions,
 Discord spoilers, mentions, channel IDs and -# subtext, and escaped
 punctuation in the chat dialect examples. Quote handling preserves the

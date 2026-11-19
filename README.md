@@ -46,21 +46,21 @@ SHA-256 if relevant, and steps to reproduce it.
 ### Channel packages
 
 - Stable: sierra-stable-77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be.zip — 1953 bytes, expanded 6279 bytes, SHA-256 77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-stable-77558fe4ea8ad1098e0ee28e613ecc6b61374707361d215c08f609cf8c4621be.zip
-- Beta: sierra-beta-dde647b8648e1588404a44692a5a3a5d2d824312c6509b2151df1068d2e8fdf5.zip — 68829836 bytes, expanded 166984668 bytes, SHA-256 dde647b8648e1588404a44692a5a3a5d2d824312c6509b2151df1068d2e8fdf5 — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-beta-dde647b8648e1588404a44692a5a3a5d2d824312c6509b2151df1068d2e8fdf5.zip
+- Beta: sierra-beta-57f28db5a7906f9284ff884ea6b349b6416926d7293728479459cde82a882e1b.zip — 84798 bytes, expanded 263702 bytes, SHA-256 57f28db5a7906f9284ff884ea6b349b6416926d7293728479459cde82a882e1b — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-beta-57f28db5a7906f9284ff884ea6b349b6416926d7293728479459cde82a882e1b.zip
 - Alpha: sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip — 1952 bytes, expanded 6278 bytes, SHA-256 31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c — https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/sierra-alpha-31160c2b0a186ece7edaa3ebac3681d965a255fb2169b29dc2cbc58478e5c56c.zip
 
 Stable and Alpha overlays now carry the shared dialect rules (same rules as the Beta package). There is no separate LTS package channel; LTS uses the Stable overlay.
 
-Latest Beta reader package (build 180, app version 1.80-beta): the new
-renderer engine and its Markdown support, now in the downloadable Beta
-reader package. The shared universal package is unchanged. The catalog
-needs activation before Beta receives the new package; that activation
-is a separate step, not done in this release update. No APK is included
-in this release.
+Latest Beta reader package (build 195, app version 1.80-beta): a small
+Beta package update (84798 bytes, 2 engine files) on top of the build
+180 renderer package. The shared universal package is unchanged. The
+catalog needs activation before Beta receives the new package; that
+activation is a separate step, not done in this release update. No APK
+is included in this release.
 
 ### Signed reader catalog
 
-- reader-updates.json — 2047 bytes, SHA-256 351ff5e14cb3cd3ac13f31979343f526de8376cffab13fd5bcdda6892ab6b1ec, Ed25519-signed, schema 1, engineApi 1, minAppBuild 110
+- reader-updates.json — 2039 bytes, SHA-256 092cf23efdad5be7a471d239286a8a378aec4ccf3597cc637fd2c0ffcb4dc1c6, Ed25519-signed, schema 1, engineApi 1, minAppBuild 110
 - Download: https://github.com/expertmanofficial/sierra-reader-packages/releases/download/reader-pack-v1/reader-updates.json
 - The catalog points each channel at its current package above.
 
